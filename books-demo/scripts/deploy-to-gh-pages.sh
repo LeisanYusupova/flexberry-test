@@ -17,4 +17,3 @@ git checkout -f main
 git branch -D gh-pages
 
 echo "Successfully deployed"
-
