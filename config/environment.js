@@ -44,7 +44,11 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.rootURL = '/flexberry-test/';
+  }
+
+  if (environment === 'ci') {
+    ENV.rootURL = '/flexberry-test/';
   }
 
   return ENV;
