@@ -1,7 +1,7 @@
 import { helper } from '@ember/component/helper';
 
 export function getBookName(params/*, hash*/) {
-  let {title} = params;
+  let [title] = params;
   return `${title}`;
 }
 

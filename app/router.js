@@ -10,7 +10,8 @@ Router.map(function() {
   this.route('author');
   this.route('books');
   this.route('speakers');
-  this.route('edit-book');
+  this.route('edit-book', { path: "/:id/edit" });
+  this.route('detail', { path: "/:id" });
   this.route('edit-speaker');
   this.route('404', {path: '*path'});
 });
